@@ -3,6 +3,9 @@
 #include <SetupAPI.h>
 #include <atlstr.h>
 
+// Adapted from https://stackoverflow.com/questions/1438371/win32-api-function-to-programmatically-enable-disable-device
+// Thank you!
+
 class SetupApiHelper
 {
 public:
