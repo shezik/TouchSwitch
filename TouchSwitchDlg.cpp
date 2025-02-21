@@ -245,14 +245,14 @@ void CTouchSwitchDlg::OnMouseMove(UINT nFlags, CPoint point)
 	{
 		int dx = point.x - m_ptDragStart.x;
 		int dy = point.y - m_ptDragStart.y;
-		if (abs(dx) > dragThreshold || abs(dy) > dragThreshold)
-			m_bIsDragging = TRUE;
+
 		if (m_bIsDragging)
 		{
 			CRect pos;
 			GetWindowRect(&pos);
 			MoveWindow(pos.left + dx, pos.top + dy, pos.Width(), pos.Height());
-		}
+		} else if (abs(dx) > dragThreshold || abs(dy) > dragThreshold)
+			m_bIsDragging = TRUE;
 	}
 	CDialogEx::OnMouseMove(nFlags, point);
 }
@@ -369,7 +369,7 @@ void CTouchSwitchDlg::OnMenuSettings()
 
 void CTouchSwitchDlg::OnMenuAbout()
 {
-	AfxMessageBox(_T("by shezik\nhttps://github.com/shezik"), MB_ICONASTERISK);  // this is so bad lol
+	AfxMessageBox(_T("TouchSwitch v" APP_VERSION "\nhttps://github.com/shezik/TouchSwitch"), MB_ICONASTERISK);  // this is so bad lol
 }
 
 void CTouchSwitchDlg::OnMenuExit()
@@ -442,7 +442,7 @@ LRESULT CTouchSwitchDlg::OnFreeSettingsDlg(WPARAM wParam, LPARAM lParam)
 		}
 
 		WriteToSettingsProfile();
-		//PromptTargetDeviceValidity();
+		//PromptTargetDeviceValidity();  // Bringing up two identical dialogs consecutively is ambiguous
 	}
 
 	m_pSettingsDlg->DestroyWindow();

@@ -38,5 +38,6 @@ extern CTouchSwitchApp theApp;
 //
 
 #define APP_TITLE "TouchSwitch"
+#define APP_VERSION "1.0.0.2"  // Remember to update value in RC!
 #define WM_APP_TRAYICON (WM_USER + 1)
 #define WM_APP_FREE_SETTINGS_DLG (WM_USER + 2)
