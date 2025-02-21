@@ -73,9 +73,7 @@ END_MESSAGE_MAP()
 BOOL CTouchSwitchDlg::OnInitDialog()
 {
 	CDialogEx::OnInitDialog();
-	// Read back actual value of m_bLockPosition
-	m_bLockPosition = m_bLockPositionBackup;
-
+	
 	// Set the icon for this dialog.  The framework does this automatically
 	//  when the application's main window is not a dialog
 	SetIcon(m_hIcon, TRUE);			// Set big icon
@@ -87,6 +85,9 @@ BOOL CTouchSwitchDlg::OnInitDialog()
 	// Restore last saved window position
 	if (m_iLastX > 0 && m_iLastY > 0 && m_iLastWidth > 0 && m_iLastHeight > 0)
 		MoveWindow(m_iLastX, m_iLastY, m_iLastWidth, m_iLastHeight);
+
+	// Read back actual value of m_bLockPosition
+	m_bLockPosition = m_bLockPositionBackup;
 
 	m_hPowerNotify = RegisterSuspendResumeNotification(m_hWnd, DEVICE_NOTIFY_WINDOW_HANDLE);  // Sleep
 	WTSRegisterSessionNotification(m_hWnd, NOTIFY_FOR_THIS_SESSION);  // Lock
