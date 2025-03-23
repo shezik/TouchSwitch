@@ -5,6 +5,8 @@ This is an effort to make my spending on a tablet seems worthwhile, which in tur
 
 One use case of this widget is that if you are like me who bought an ARM64 Windows tablet with a decent oomph however downright shitty touch screen and digitizer (yes you got it right, it is Xiaomi Book 12.4 Inch. Xiaomi again. *\*sigh\**), this time before you yet again try to let the stylus reach the screen before your hand does but still fail miserably due to the exceptionally short detection range and unproportionally long detection latency of the digitizer which of course renders the palm rejection feature pratically useless, you could touch this widget to disable the touch screen (it turns red!), write with the stylus, then poke the widget with the stylus till it turns green again to re-enable the touch screen.
 
+Update: I have swapped it for a Samsung. What a breeze.
+
 ----------------
 
 This is literally code shitposting. I mean who tf uses MFC in 2025?
