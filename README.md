@@ -13,7 +13,7 @@ This is literally code shitposting. I mean who tf uses MFC in 2025?
 
 It's not like I'm familiar with it or what, I learned everything on the go. (albeit to a limited extent)
 
-The sole reason I chose to use MFC is that it's fast and small in size. (that's what ur mom said)
+The sole reason I picked MFC was that it's fast and small in size. (that's what ur mom said)
 
 Which is also intrinsic to C++ programs. (Apparently when you apply this criteria, Qt is no longer written in C++.)
 
@@ -24,3 +24,4 @@ TODO: (it's not like I'm gonna do it anyway)
 - Fix flickering when resizing
 - Fix incorrect widget position and size restoration upon launch (desktop scaling related MFC issue?)
 - General code polishing
+- FUCKING MEMORY LEAKS?? AFTER I THIS FUCKING CAREFULLY CHECKED EVERYTHING???
